@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.top-bar {
+    background-color: #d8ecff;
+    font-size: 14px;
+}
+
+.middle-bar {
+    padding: 10px 0;
+}
+
+.middle-bar-text {
+    text-decoration: none;
+    color: black;
+}
+
+.middle-bar-text:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.middle-bar img {
+    max-height: 50px;
+}
+
+.nav-bottom {
+    border-top: 1px solid #ddd;
+}
+
+.nav-bottom .nav-link {
+    color: hsl(210, 100%, 20%);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-bottom .social-icons a {
+    margin-left: 10px;
+    color: white;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #023f7c;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(230, 132, 20);
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    background-color: #f3bb68;
+    margin: 0 6px;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(233, 99, 21);
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: orange;
+}
+
+.speciality-box {
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    padding: 10px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.speciality-box:hover {
+    background-color: #d6dff8;
+}
+
+.speciality-box.active {
+    background-color: #e2f0ff;
+    color: #1b4e9b;
+    font-weight: 600;
+}
+
+.speciality-box img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(89%) saturate(528%) hue-rotate(187deg) brightness(92%) contrast(90%);
+}
+
+.feature-box {
+    border: 1px solid #fdbb84;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-item img {
+    filter: brightness(0) saturate(100%) sepia(80%) hue-rotate(-10deg) saturate(300%);
+}
+
+.feature-item:hover {
+    background-color: #d6e9ff;
+    color: #ff6d00;
+    font-weight: 600;
+}
+
+.feature-item.active {
+    background-color: #d6e9ff;
+    color: #ff6d00;
+    font-weight: 600;
+}
+
+.feature-item img {
+    filter: sepia(100%) saturate(800%) hue-rotate(-10deg) brightness(1);
+}
+
+
+
+.orange-line {
+    width: 60px;
+    height: 3px;
+    background-color: orange;
+    border: none;
+}
+
+.text-orange {
+    color: orange;
+}
+
+
+
+.video-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-orange {
+    color: orange;
+}
+
+
+.accordion-item {
+    border: none;
+    border-bottom: 2px solid orange;
+    border-left: 2px solid orange;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: white;
+    color: #333;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: orange;
+}
+
+.accordion-body {
+    background-color: white;
+    padding: 15px;
+    font-size: 15px;
+    color: #444;
+    text-align: left;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: inherit;
+    box-shadow: none;
+}
+
+
+.services-container {
+    background-color: #d3ebf5;
+    padding: 40px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.service-column {
+    padding: 0 30px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.service-item {
+    margin-bottom: 10px;
+}
+
+.row{
+    margin-top: 40px;
+    padding: 50px 0px;
+}
+
+.footer-hover{
+    text-decoration: none;
+    color: rgb(85, 90, 97);
+}
+
+.footer-hover:hover{
+    color: orange;
+    /* filter: hue-rotate(30deg) saturate(500%) brightness(1.1); */
+}
+
+.my-list {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* spacing between items */
+  padding: 0;
+  margin: 0;
+  
+}
+
+.my-list li {
+  display: inline;
+      
+}
+
+.my-list li a{
+    text-decoration: none;
+    color: rgb(6, 19, 77);
+}
+
+.my-list li a:hover{
+    color: orange;
+}
+
+footer {
+  position: relative;
+  
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
+
+/* Add these to your CSS file */
+
+/* Mobile-specific styles */
+@media (max-width: 767.98px) {
+  .top-bar {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  
+  .top-bar img {
+    width: 18px;
+  }
+  
+  .sticky-navbar-wrapper {
+    position: relative;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem;
+  }
+  
+  /* Adjust carousel for mobile */
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+  
+  /* Adjust specialities section for mobile */
+  .specialities .row {
+    margin-left: 0 !important;
+  }
+  
+  .speciality-box {
+    max-width: 100%;
+    font-size: 16px !important;
+  }
+  
+  /* Adjust footer for mobile */
+  .service-column {
+    padding: 0 15px !important;
+    margin-bottom: 20px;
+  }
+  
+  .my-list {
+    flex-direction: column;
+    gap: 10px !important;
+    padding-left: 15px;
+  }
+}
+
+/* Ensure the mobile menu has proper spacing */
+#mobileMenu .nav-link {
+  padding: 8px 0;
+  display: block;
+}
+
+/* Make sure the hospital name doesn't wrap */
+.fw-bold[style*="font-size: 25px"] {
+  white-space: nowrap;
+}

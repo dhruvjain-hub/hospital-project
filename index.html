@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nivik Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+  <div class="sticky-navbar-wrapper sticky-top shadow-lg bg-white">
+
+    <!-- Top Bar - Visible on all devices -->
+    <div class="top-bar px-2 py-1 d-flex justify-content-between align-items-center">
+      <div class="d-flex mx-md-5 align-items-center gap-2 flex-wrap">
+        <img src="24hrs.svg" alt="24hrs" width="24px">
+        <div class="d-none d-md-block" style="font-size: 15px; color: rgb(27, 78, 155);"><b>ENQUIRY</b></div>
+        <div style="font-size: 15px; color: rgb(27, 78, 155);"><strong>+91 7069001001</strong></div>
+        <div class="d-none d-md-block" style="color: rgb(27, 78, 155);">&nbsp; | &nbsp;</div>
+        <img class="d-none d-md-block" src="WASocial.svg" alt="WA logo" width="24px">
+        <div class="d-none d-md-block" style="font-size: 15px; color: rgb(27, 78, 155);"><strong>+91 95120
+            06886</strong></div>
+      </div>
+      <div class="d-none d-md-block">
+        <span><strong>Jaipur</strong> <i class="bi bi-caret-down-fill"></i></span> &nbsp;
+        <img src="https://flagcdn.com/w40/gb.png" width="20" alt="English"> English <i
+          class="bi bi-caret-down-fill"></i>
+      </div>
+    </div>
+
+    <!-- Middle Bar - Desktop version -->
+    <div class="middle-bar container d-none d-md-flex justify-content-between align-items-center">
+      <div class="fw-bold" style="font-size: 25px; color: rgb(27, 78, 155);">
+        Nivik Hospital
+      </div>
+      <div class="d-flex gap-1 justify-content-between align-items-center" style="font-size: 14px;">
+        <div><img src="FindADoctorHeadMenu.svg" alt="Doctor logo" width="22px">&nbsp;<a class="middle-bar-text"
+            href="https://www.shalby.org/hospitals/jaipur-shalby/meet-our-experts/">Find A Doctor</a> </div>
+        <div style="color: rgb(27, 78, 155);">&nbsp; | &nbsp;</div>
+        <div><img src="OurhospitalheadMenu.svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+            href="https://www.shalby.org/hospitals/jaipur-shalby/our-hospitals/">Our Hospitals</a></div>
+        <div style="color: rgb(27, 78, 155);">&nbsp; | &nbsp;</div>
+        <div><img src="OurhospitalheadMenu (1).svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+            href="https://www.shalby.org/opd-centers/">Out Reach Clinics</a> </div>
+        <div style="color: rgb(27, 78, 155);">&nbsp; | &nbsp;</div>
+        <div><img src="Homecare.svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+            href="https://shalbyhomecare.org/?_gl=1%2Arhwc6v%2A_gcl_au%2AMTMwMDc1MzgzMS4xNzUxNTk5MjA3">Home Care
+            Service</a></div>
+        <div style="color: rgb(27, 78, 155);">&nbsp; | &nbsp;</div>
+        <div><img src="camp2.svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+            href="https://www.shalby.org/health-camp/">Health Camp</a></div>
+      </div>
+    </div>
+
+    <!-- Mobile Header with Hamburger -->
+    <div class="d-md-none container d-flex justify-content-between align-items-center py-2">
+      <div class="fw-bold" style="font-size: 25px; color: rgb(27, 78, 155);">
+        Nivik Hospital
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        <i class="bi bi-list" style="font-size: 2rem;"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (Collapsible) -->
+    <div class="collapse d-md-none" id="mobileMenu">
+      <div class="container py-3">
+        <!-- Middle bar links in mobile menu -->
+        <div class="d-flex flex-column gap-3">
+          <div><img src="FindADoctorHeadMenu.svg" alt="Doctor logo" width="22px">&nbsp;<a class="middle-bar-text"
+              href="https://www.shalby.org/hospitals/jaipur-shalby/meet-our-experts/">Find A Doctor</a> </div>
+          <div><img src="OurhospitalheadMenu.svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+              href="https://www.shalby.org/hospitals/jaipur-shalby/our-hospitals/">Our Hospitals</a></div>
+          <div><img src="OurhospitalheadMenu (1).svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+              href="https://www.shalby.org/opd-centers/">Out Reach Clinics</a> </div>
+          <div><img src="Homecare.svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+              href="https://shalbyhomecare.org/?_gl=1%2Arhwc6v%2A_gcl_au%2AMTMwMDc1MzgzMS4xNzUxNTk5MjA7">Home Care
+              Service</a></div>
+          <div><img src="camp2.svg" alt="logo" width="22px">&nbsp;<a class="middle-bar-text"
+              href="https://www.shalby.org/health-camp/">Health Camp</a></div>
+        </div>
+
+        <!-- Bottom bar links in mobile menu -->
+        <div class="mt-4 pt-3 border-top">
+          <div class="d-flex flex-column gap-3">
+            <a class="nav-link" href="https://www.shalby.org/about-us/">About Us</a>
+            <a class="nav-link" href="#specialities">Specialities</a>
+            <a class="nav-link" href="https://www.shalby.org/specialities/onco-sciences/">Onco Sciences</a>
+            <a class="nav-link" href="https://www.shalby.org/international-patients/">International Patients</a>
+            <a class="nav-link" href="https://www.shalby.org/investors/">Investors</a>
+            <a class="nav-link" href="#">Employee Corner</a>
+            <a class="nav-link" href="https://www.shalby.org/hospitals/jaipur-shalby/contact-us/">Contact Us</a>
+          </div>
+
+          <!-- Social icons in mobile menu -->
+          <div class="social-icons d-flex justify-content-center mt-4">
+            <a href="https://www.youtube.com/user/shalbyhospitals"><img src="YB.svg" alt="yt logo"></a>
+            <a href="https://in.linkedin.com/company/shalby-hospitals"><img src="ln.svg" alt="ln logo"></a>
+            <a href="https://www.facebook.com/shalbyhospital/"><img src="fb.svg" alt="fb logo"></a>
+            <a href="https://twitter.com/shalbyhospitals"><img src="twitter.svg" alt="x logo"></a>
+            <a href="https://www.instagram.com/shalbyhospitals/"><img src="insta.svg" alt="insta logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar - Hidden on mobile -->
+    <div class="nav-bottom bg-white py-2 px-3 d-none d-md-flex justify-content-between align-items-center">
+      <div class="d-flex flex-wrap gap-3">
+        <a class="nav-link" href="https://www.shalby.org/about-us/">About Us</a>
+        <a class="nav-link" href="#specialities">Specialities</a>
+        <a class="nav-link" href="https://www.shalby.org/specialities/onco-sciences/">Onco Sciences</a>
+        <a class="nav-link" href="https://www.shalby.org/international-patients/">International Patients</a>
+        <a class="nav-link" href="https://www.shalby.org/investors/">Investors</a>
+        <a class="nav-link" href="#">Employee Corner</a>
+        <a class="nav-link" href="https://www.shalby.org/hospitals/jaipur-shalby/contact-us/">Contact Us</a>
+        &nbsp; | &nbsp;
+        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+      </div>
+      <div class="social-icons d-flex">
+        <a href="https://www.youtube.com/user/shalbyhospitals"><img src="YB.svg" alt="yt logo"></a>
+        <a href="https://in.linkedin.com/company/shalby-hospitals"><img src="ln.svg" alt="ln logo"></a>
+        <a href="https://www.facebook.com/shalbyhospital/"><img src="fb.svg" alt="fb logo"></a>
+        <a href="https://twitter.com/shalbyhospitals"><img src="twitter.svg" alt="x logo"></a>
+        <a href="https://www.instagram.com/shalbyhospitals/"><img src="insta.svg" alt="insta logo"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rest of your HTML content remains the same -->
+
+
+  <div id="hospitalCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="robotic.jpg" class="img-fluid w-100" alt="robotic">
+      </div>
+
+
+      <div class="carousel-item ">
+        <img src="Expertise-Jaipur.svg" class="img-fluid w-100" alt="Expertise-Jaipur">
+      </div>
+
+      <div class="carousel-item ">
+        <img src="Current1.svg" class="img-fluid w-100" alt="Current1">
+      </div>
+
+      <div class="carousel-item ">
+        <img src="Jaipur.jpg" class="img-fluid w-100" alt="Map">
+      </div>
+
+      <div class="carousel-item ">
+        <img src="SG_Web_Banner_Emergence_.jpg" class="img-fluid w-100" alt="Map">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+  <section id="specialities" class="specialities py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fw-bold d-inline-block"
+          style="font-size: 38px; color: rgb(27, 78, 155); border-bottom: 3px solid orange;">
+          Specialities
+        </h2>
+      </div>
+
+      <div class="row g-4 justify-content-center" style="margin-left: 15%;">
+        <!-- Left column -->
+        <div class="col-md-6">
+          <div class="d-flex align-items-center speciality-box ">
+            <img src="bone-joint.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Bone and Joint</span>
+          </div>
+
+          <div class="d-flex align-items-center speciality-box">
+            <img src="cardiology.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Cardiac Sciences</span>
+          </div>
+
+          <div class="d-flex align-items-center speciality-box">
+            <img src="Gastroenterology.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Gastro Sciences</span>
+          </div>
+
+          <div class="d-flex align-items-center speciality-box">
+            <img src="neurology.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Neuro Sciences</span>
+          </div>
+
+          <div class="d-flex align-items-center speciality-box">
+            <img src="Obstetrics-And-Gynaecology.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Obstetrics and Gynaecology</span>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-md-6">
+          <div class="d-flex align-items-center speciality-box">
+            <img src="oncology.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Onco Sciences</span>
+          </div>
+
+          <div class="d-flex align-items-center speciality-box">
+            <img src="Kidney.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Kidney Sciences</span>
+          </div>
+
+          <div class="d-flex align-items-center speciality-box">
+            <img src="Dental-Care.svg" width="30" class="me-3">
+            <span style="color: #535353; font-size: 18px">Dental Cosmetic and Implantology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container my-5">
+    <div class="text-center">
+      <h2 class="fw-bold d-inline-block"
+        style="font-size: 38px; color: rgb(27, 78, 155); border-bottom: 3px solid orange;">
+        About Us
+      </h2>
+    </div>
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <h4>
+          <span style="color: orange; font-weight: 700; font-size: 30px;">Welcome</span>
+          <span style="font-weight: 600; size: 20px;"> to Nivik Hospital, Jaipur</span>
+        </h4>
+        <p style="color: #555; line-height: 26px; font-size:18px;">
+          Nivik Hospitals, Jaipur is located at Chitrakoot, Vaishali Nagar Jaipur.
+          This Hospital spread over a plot area of 42,033 Sq. ft with built up area of 192550 Sq. ft. is one of the
+          fully equipped multi-specialty hospitals situated in the Western part of Jaipur. It is one of its kind
+          multi-specialty hospitals having 237 beds with 23 operational Critical Care beds for medical, surgical &
+          neonatal care.
+        </p>
+
+        <a href="#" class="text-decoration-none" style="color: orange; font-weight: 600; font-size: 18px;">
+          Know More <span
+            style="background-color: #ffe9d6; padding: 6px 10px; border-radius: 50%; color: orange;">→</span>
+        </a>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="Jaipur-1-300x188.png" class="img-fluid" alt="Hospital Building"
+          style="height: 250px;max-height: 400px;">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container my-4">
+    <div class="feature-box d-flex flex-wrap justify-content-center align-items-center gap-3 p-3">
+
+      <div class="feature-item">
+        <img src="aboutOurSpecialities.svg" width="24" alt="Specialities">
+        <span>Our Specialities</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="aboutOurDoc.svg" width="24" alt="Doctors">
+        <span>Our Doctors</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="aboutcontact.svg" width="24" alt="Contact">
+        <span>Contact Us</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="aboutAward.svg" width="24" alt="Awards">
+        <span>Awards</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="aboutFacilties.svg" width="24" alt="Facilities">
+        <span>Facilities</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="aboutTestimonial.svg" width="24" alt="Testimonials">
+        <span>Testimonials</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="ourSpeci.svg" width="24" alt="Media">
+        <span>News & Media</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="aboutFAQ.svg" width="24" alt="FAQ">
+        <span>FAQ</span>
+      </div>
+
+      <div class="feature-item">
+        <img src="TPA.svg" width="24" alt="Insurance">
+        <span>Insurance, Corporate & TPA Tie ups</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <section class="py-5">
+    <div class="container text-center">
+      <div class="text-center">
+        <h2 class="fw-bold d-inline-block"
+          style="font-size: 38px; color: rgb(27, 78, 155); border-bottom: 3px solid orange;">
+          Clinical Excellence
+        </h2>
+      </div>
+
+      <p class="text-muted mb-5" style="font-size: 18px;">
+        Committed to strict clinical protocols & best in class healthcare practices to provide best <br>outcomes
+        consistently
+      </p>
+      <br>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="p-4 bg-white rounded shadow-lg position-relative">
+            <img src="hospital-clicnical.png" alt="Hospital" width="60" class="mb-2 d-block mx-auto"
+              style="margin-top:-50px;">
+            <hr class="orange-line mx-auto">
+            <h6 class="fw-bold mt-3">Multi-specialty Hospitals</h6>
+            <p class="text-orange fw-semibold">10</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="p-4 bg-white rounded shadow-lg position-relative">
+            <img src="BedCapacity.png" alt="Beds" width="60" class="mb-2 d-block mx-auto" style="margin-top:-50px;">
+            <hr class="orange-line mx-auto">
+            <h6 class="fw-bold mt-3">Beds Capacity</h6>
+            <p class="text-orange fw-semibold">2000+</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="p-4 bg-white rounded shadow-lg position-relative">
+            <img src="DoctorClinical.png" alt="Doctor" width="60" class="mb-2 d-block mx-auto"
+              style="margin-top:-50px;">
+            <hr class="orange-line mx-auto">
+            <h6 class="fw-bold mt-3">Doctors</h6>
+            <p class="text-orange fw-semibold">1500+</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="p-4 bg-white rounded shadow-lg position-relative">
+            <img src="totalPatient.png" alt="Patients" width="60" class="mb-2 d-block mx-auto"
+              style="margin-top:-50px;">
+            <hr class="orange-line mx-auto">
+            <h6 class="fw-bold mt-3">Total Patients Served</h6>
+            <p class="text-orange fw-semibold">2.8 Million +</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="py-5">
+
+    <div class="container text-center">
+      <div class="text-center">
+        <h2 class="fw-bold d-inline-block"
+          style="font-size: 38px; color: rgb(27, 78, 155); border-bottom: 3px solid orange;">
+          Testimonials
+        </h2>
+      </div>
+
+      <p class="text-muted mb-5" style="font-size: 18px;">
+        We leave no stone unturned to deliver quality healthcare to our <br>patients. This is what our patients have to
+        say about us
+      </p>
+
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="video-card p-3 bg-light rounded-4 shadow-lg position-relative">
+
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <iframe src="https://www.youtube.com/embed/VNFAZphrYPI
+" title="YouTube video" allowfullscreen>
+                </iframe>
+              </div>
+
+              <div class="pt-3">
+                <h6 class="fw-bold mb-2">
+                  Successful Recovery of 60 Year Patient in Emergency Case
+                </h6>
+                <a href="https://www.youtube.com/watch?time_continue=1&v=VNFAZphrYPI&embeds_referring_euri=https%3A%2F%2Fwww.shalby.org%2F&source_ve_path=Mjg2NjY"
+                  class="text-orange text-decoration-none fw-semibold">Watch video..</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="video-card p-3 bg-light rounded-4 shadow-lg position-relative">
+
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <iframe src="https://www.youtube.com/embed/X9OeVTFMKTY" title="YouTube video" allowfullscreen>
+                </iframe>
+              </div>
+
+              <div class="pt-3">
+                <h6 class="fw-bold mb-2">
+                  Successful Recovery of 60 Year Patient in Emergency Case
+                </h6>
+                <a href="https://youtu.be/X9OeVTFMKTY" class="text-orange text-decoration-none fw-semibold">Watch
+                  video..</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="video-card p-3 bg-light rounded-4 shadow-lg position-relative">
+
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <iframe src="https://www.youtube.com/embed/GNXoK2Wi-F8" title="YouTube video" allowfullscreen>
+                </iframe>
+              </div>
+
+              <div class="pt-3">
+                <h6 class="fw-bold mb-2">
+                  Successful Recovery of 60 Year Patient in Emergency Case
+                </h6>
+                <a href="https://youtu.be/GNXoK2Wi-F8" class="text-orange text-decoration-none fw-semibold">Watch
+                  video..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <div class="container py-4">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="p-3 rounded-4 bg-light shadow-lg">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="fw-bold text-primary m-0">NEWS & MEDIA</h6>
+            <a href="#" class="text-orange fw-bold">VIEW ALL</a>
+          </div>
+          <img src="Shalby-Hospital-Jaipur-Stroke-Celebration-1-1024x1024.jpeg" alt="News"
+            class="img-fluid rounded mb-3" style="height: 215px;width: 350px;">
+          <h6 class="fw-semibold">Nivik HEALTHON’ Organized at Nivik Hospital, Jaipur, on the Occasion...</h6>
+          <div class="d-flex justify-content-between mt-2 small">
+            <span class="text-muted">Nov 2023</span>
+            <a href="#" class="text-orange fw-semibold text-decoration-none">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 rounded-4 bg-light shadow-lg">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="fw-bold text-primary m-0">BLOG</h6>
+            <a href="#" class="text-orange fw-bold">VIEW ALL</a>
+          </div>
+          <img src="Cost-1.1-1024x683.jpg" alt="Blog" class="img-fluid rounded mb-3">
+          <h6 class="fw-semibold">The Cost of Cancer Treatment: Financial Planning and Support</h6>
+          <div class="d-flex justify-content-between mt-2 small">
+            <span class="text-muted">Feb 2025</span>
+            <a href="#" class="text-orange fw-semibold text-decoration-none">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-3 rounded-4 bg-light shadow-lg">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="fw-bold text-primary m-0">Health talk</h6>
+            <a href="#" class="text-orange fw-bold">VIEW ALL</a>
+          </div>
+          <div class="ratio ratio-16x9 rounded mb-3">
+            <iframe src="https://www.youtube.com/embed/j8dbKdpdMIo" title="YouTube video player" allowfullscreen>
+            </iframe>
+          </div>
+          <h6 class="fw-semibold">पेटिक अल्सर: कारण, लक्षण इलाज एवं बचाव</h6>
+          <div class="d-flex justify-content-between mt-2 small">
+            <span class="text-muted">Jul 2024</span>
+            <a href="https://www.youtube.com/j8dbKdpdMIo" class="text-orange fw-semibold text-decoration-none">Read
+              More..</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="container text-center">
+      <div class="text-center">
+        <h2 class="fw-bold d-inline-block"
+          style="font-size: 38px; color: rgb(27, 78, 155); border-bottom: 3px solid orange;">
+          Frequently Asked Questions
+        </h2>
+      </div>
+      <div class="row align-items-center mt-4">
+        <!-- Left Image -->
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="faqleftImg1.svg" alt="FAQ Illustration" class="img-fluid" style="max-height: 300px;">
+        </div>
+
+        <!-- Right Accordion -->
+        <div class="col-md-7">
+          <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  How can I contact Nivik Hospitals?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  For any of your inquiries, call on 70690 01001.
+                  <br>For more information, <a href="#">click here</a>.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  How do I schedule an appointment with a doctor?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  you can request for appointment on Book Appointment<br>
+
+                  c. Or contact on below mentioned numbers:<br>
+                  Nivik Hospital, SG Highway, Ahmedabad- +91 9924067400 <br>
+                  Nivik Hospital, Vijay Cross Road, Ahmedabad- +91 9824344554 <br>
+                  Krishna Nivik Hospital, Ghuma, Ahmedabad- +91 9904433369 <br>
+                  Nivik Hospital, Naroda, Ahmedabad- 079-71238889 <br>
+                  Nivik Hospital, Vapi- +91 70460 63333 <br>
+                  Nivik Hospital, Surat- +91 9512660096 <br>
+                  Nivik Hospital, Mohali- +91 8725040394 <br>
+                  Nivik Hospital, Jabalpur- +91 9575801200 <br>
+                  Nivik Hospital, Indore- +91 7049918800 <br>
+                  Nivik Hospital, Jaipur- +91 7698000947 <br>
+                  SOCE Lucknow – +91 95120 09307 <br>
+                  SOCE Gwalior- +91 73543 46660 <br>
+                  SOCE Udaipur- +91 91191 18000
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  What are the hospital's hours of operation?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  24*7 for any emergency. For OPD consultation, 10 am to 6 pm, however, it is advisable to seek prior
+                  appointment of the concerned doctor.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  How do I pay my hospital bills?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We accept different modes of payment like: <br>
+                  a. Debit and Credit Card <br>
+                  b. Demand Draft <br>
+                  c. Online Payment and <br>
+                  d. As per the Government Norm Cash Up to Rs. 2 Lakh
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  What should I do in case of an emergency?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Please call our emergency number as given below: <br>
+
+                  Nivik Hospital, SG Highway, Ahmedabad- +91 99240 23456 <br>
+                  Nivik Hospital, Vijay Cross Road, Ahmedabad- +91 99245 93339 <br>
+                  Krishna Nivik Hospital, Ghuma, Ahmedabad-+91 99047 22345 <br>
+                  Nivik Hospital, Naroda, Ahmedabad- +91 99134 60101 <br>
+                  Nivik Hospital, Vapi-+91 95120 36099 <br>
+                  Nivik Hospital, Surat-+91 95126 60096 <br>
+                  Nivik Hospital, Mohali- +91 87250 40394 <br>
+                  Nivik Hospital, Jabalpur-+91 95758 01020 <br>
+                  Nivik Hospital, Indore- +91 91744 00100 <br>
+                  Nivik Hospital, Jaipur- 0141- 7124444 <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                  Do you assist the international patients?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We have a special international patient desk to assist patients from foreign Countries. For more
+                  information, <a href="https://www.shalby.org/international-patients/">click here</a> .
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid p-0" style="margin-top: 70px;">
+      <div class="services-container">
+        <div class="container" style="background-color: white; margin-top: 80px;">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 service-column">
+              <h2 class="fw-bold d-inline-block"
+                style="font-size: 20px; color: rgb(85, 90, 97); border-bottom: 3px solid orange;">
+                About Us
+              </h2>
+
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <i class="bi bi-house"></i> Chitrakoot, Sector No. 3, <br>
+                Jaipur, Rajasthan, India
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <i class="bi bi-telephone"></i>+91 9057901410
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <i class="bi bi-envelope"></i>
+                info.jaipur@nivik.org
+              </div>
+              <br>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <strong>Corporate Office :</strong>
+              </div>
+              <br>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <i class="bi bi-house"></i> B-301/302,Mondeal Heights, <br>
+                S. G. Highway, <br>
+                Ahmedabad 380015, <br>
+                Gujarat , India
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <i class="bi bi-envelope"></i>
+                info@nivik.org
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 service-column">
+              <h2 class="fw-bold d-inline-block"
+                style="font-size: 20px; color: rgb(85, 90, 97); border-bottom: 3px solid orange;">
+                QUICK LINKS
+              </h2>
+
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/book-an-appointment/" class="footer-hover"><img
+                    src="Book-An-Appointment-Icon.svg"> Book An Appointment</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://shalbyhomecare.org/?_gl=1%2A14y0bj%2A_gcl_au%2AMTMwMDc1MzgzMS4xNzUxNTk5MjA3"
+                  class="footer-hover"><img src="homeCareFooter.svg" alt="logo">
+                  Book Home Care Service</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/opd-centers/" class="footer-hover"><img src="opdFooter.svg" alt="logo">
+                  OPD Centers</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.connect2mydoctor.com/shalby" class="footer-hover"><img
+                    src="Book-a-Video-Footer.svg" alt="logo">
+                  Book a Video Consultation</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://shalbycareers.peoplestrong.com/job/joblist" class="footer-hover"><img src="career.svg"
+                    alt="logo">
+                  Career</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/shalby-elite/" class="footer-hover"><img src="shalby-Elite-Footer.svg"
+                    alt="logo">
+                  Nivik Elite</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/shalby-times/" class="footer-hover"><img src="shalby-Times-Footer.svg"
+                    alt="logo">
+                  Nivik Times</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/hospitals/jaipur-shalby/blogs/" class="footer-hover"><img
+                    src="BlogGrey.svg" alt="logo">
+                  Blog</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/hospitals/jaipur-shalby/feedback/" class="footer-hover"><img
+                    src="feedbackGrey.svg" alt="logo">
+                  Feedback</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://tawk.to/chat/588b1ec8af9fa11e7aa3718b/default" class="footer-hover"><i
+                    class="bi bi-chat"></i>
+                  Chat</a>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 service-column">
+              <h2 class="fw-bold d-inline-block"
+                style="font-size: 19px; color: rgb(85, 90, 97); border-bottom: 3px solid orange;">
+                CENTER OF EXCELLENCE
+              </h2>
+
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/bone-and-joint/" class="footer-hover">Bone and Joint</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/cardiac-sciences/" class="footer-hover">
+                  Cardiac Sciences</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/dental-cosmetic-and-implantology/" class="footer-hover">
+                  Dental Cosmetic and Implantology</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/gastro-sciences/" class="footer-hover">
+                  Gastro Sciences</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/kidney-sciences/" class="footer-hover">
+                  Kidney Sciences</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/dental-cosmetic-and-implantology/" class="footer-hover">
+                  Dental Cosmetic and Implantology</a>
+              </div>
+
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/intensive-and-critical-care/" class="footer-hover">
+                  Intensive and Critical Care</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/bone-and-joint/knee-joint-replacement/"
+                  class="footer-hover">
+                  Knee Joint Replacement</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/neuro-sciences/" class="footer-hover">
+                  Neuro Sciences</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/onco-sciences/" class="footer-hover">
+                  Onco Sciences</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/specialities/obstetrics-and-gynaecology/" class="footer-hover">
+                  Obstetrics and Gynaecology</a>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6 service-column">
+              <h2 class="fw-bold d-inline-block"
+                style="font-size: 19px; color: rgb(85, 90, 97); border-bottom: 3px solid orange;">
+                NIVIK GROUP
+              </h2>
+
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalbytech.com/" class="footer-hover">Nivik Medical devices</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://shalbyacademy.com/?_gl=1*18jbfg7*_gcl_au*MTMwMDc1MzgzMS4xNzUxNTk5MjA3"
+                  class="footer-hover">
+                  Nivik Academy</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://www.shalby.org/soce-franchise/" class="footer-hover">
+                  SOCE Franchise</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://shalbyhomecare.org/?_gl=1%2A1n2h6i2%2A_gcl_au%2AMTMwMDc1MzgzMS4xNzUxNTk5MjA3"
+                  class="footer-hover">
+                  Nivik Home Care</a>
+              </div>
+              <div class="service-item" style="font-size: 18px; color: rgb(85, 90, 97);">
+                <a href="https://slaneyhealthcare.com/" class="footer-hover">
+                  Slaney Health Care</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <ul class="my-list" style="margin-top: 18px; font-size: 17px;">
+            <li><a href="https://www.shalby.org/heart-stent-prices/">Heart Stent Pricing</a></li>
+            <li><a href="https://www.shalby.org/patient-care/knee-implants-ceiling-prices/">Total Knee Replacement
+                Implants Pricing</a></li>
+            <li><a href="https://www.shalby.org/hospitals/jaipur-shalby/bio-medical-waste-report/">Bio Medical Waste
+                Report</a></li>
+            <li><a href="https://www.shalby.org/hospitals/jaipur-shalby/feedback/">Feedback</a></li>
+            <li><a href="https://www.shalby.org/disclaimer/">Disclaimer</a></li>
+            <li><a href="https://www.shalby.org/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-light py-3 mt-5 w-100">
+
+      <p class="mb-0 text-muted">© 2025 Nivik Hospitals, Inc. All rights reserved</p>
+
+    </footer>
+
+</body>
+
+</html>
